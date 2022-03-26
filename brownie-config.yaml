@@ -1,0 +1,17 @@
+dependencies:
+  - aave/aave-v3-core@1.16.0
+compiler:
+  solc:
+    remappings:
+      - '@aave=aave/aave-v3-core@1.16.0'
+networks:
+  default: rinkeby
+  rinkeby:
+    weth_token: '0xc778417E063141139Fce010982780140Aa0cD5Ab'
+    pool_addresses_provider: '0xBA6378f1c1D046e9EB0F538560BA7558546edF3C'
+  mainnet-fork:
+    weth_token: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
+    pool_addresses_provider: '0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb'
+wallets:
+  from_key: ${PRIVATE_KEY}
+dotenv: .env
