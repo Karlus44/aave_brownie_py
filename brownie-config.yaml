@@ -8,10 +8,14 @@ networks:
   default: rinkeby
   rinkeby:
     weth_token: '0xc778417E063141139Fce010982780140Aa0cD5Ab'
+    dai_token: '0x0165b733e860b1674541BB7409f8a4743A564157'
     pool_addresses_provider: '0xBA6378f1c1D046e9EB0F538560BA7558546edF3C'
+    dai_eth_price_feed: '0x74825DbC8BF76CC4e9494d0ecB210f676Efa001D'
   mainnet-fork:
     weth_token: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2'
+    dai_token: '0x6B175474E89094C44Da98b954EedeAC495271d0F'
     pool_addresses_provider: '0xa97684ead0e402dC232d5A977953DF7ECBaB3CDb'
+    dai_eth_price_feed: '0x773616E4d11A78F511299002da57A0a94577F1f4'
 wallets:
   from_key: ${PRIVATE_KEY}
 dotenv: .env
